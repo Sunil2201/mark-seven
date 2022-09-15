@@ -13,11 +13,10 @@
 body{
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
-    margin: 0px;
-    background-image: url(./grootNew.png);
+    background-image: url(./assets/Background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
 }
 .header, .footer{
     /* background-color: var(--primary-color); */
@@ -83,7 +82,7 @@ textarea:focus{
     box-sizing: border-box;
     display: block;
     width: 100%;
-    min-height: 20vh;
+    min-height: 25vh;
     font-size: 1.2rem;
     background-color: white;
     border-radius: 0.5rem;
@@ -105,11 +104,16 @@ textarea:focus{
     border-radius: 0.5rem;
 }
 .footer-header{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 a{
+    color: var(--primary-color);
     text-decoration: none;
+}
+span{
+    color: var(--primary-color);
 }
 .footer{
     margin-top: 6rem;
@@ -126,4 +130,9 @@ a{
 .logoImg{
     height: 40px;
     width: 40px;
+}
+@media(max-width : 600px){
+    body{
+        background-image: url(./assets/Background-mobile.png);
+    }
 }
